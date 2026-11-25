@@ -142,3 +142,10 @@ textarea { min-height: 140px; resize: vertical; }
 .page .wrap { max-width: 760px; }
 .page h2 { font-size: 1.4rem; margin-top: 2rem; }
 .todo { background: #fff4d6; padding: 0 .3em; border-radius: 4px; }
+
+/* Eingebettete Hebamio-Anmeldung */
+.embed { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; }
+.embed-note { color: var(--muted); font-size: .95rem; }
+.embed iframe { width: 100%; height: 1500px; border: 0; border-radius: 12px; background: #fff; display: block; }
+.embed-fallback { font-size: .9rem; color: var(--muted); margin: 1rem 0 0; }
+@media (max-width: 760px) { .embed { padding: 1rem; } .embed iframe { height: 1800px; } }

@@ -170,33 +170,12 @@
         <p><strong>Einzugsgebiet:</strong> Bezirk Eferding</p>
       </div>
 
-      <form name="anfrage" method="POST" action="/danke.html" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="anfrage">
-        <p class="hidden"><label>Nicht ausfüllen: <input name="bot-field"></label></p>
-        <div class="form-row">
-          <label>Name<input type="text" name="name" required autocomplete="name"></label>
-          <label>Telefon<input type="tel" name="telefon" autocomplete="tel"></label>
-        </div>
-        <div class="form-row">
-          <label>E-Mail<input type="email" name="email" required autocomplete="email"></label>
-          <label>Errechneter Geburtstermin<input type="date" name="geburtstermin"></label>
-        </div>
-        <div class="form-row">
-          <label>Wohnort<input type="text" name="wohnort" autocomplete="address-level2"></label>
-          <label>Worum geht es?
-            <select name="anliegen">
-              <option>Wochenbettbetreuung</option>
-              <option>Betreuung in der Schwangerschaft</option>
-              <option>Hebammenberatung Eltern-Kind-Pass</option>
-              <option>Geburtsvorbereitung</option>
-              <option>Sonstiges</option>
-            </select>
-          </label>
-        </div>
-        <label>Nachricht<textarea name="nachricht"></textarea></label>
-        <label class="check"><input type="checkbox" name="datenschutz" required> <span>Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert werden. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</span></label>
-        <div><button class="btn" type="submit">Anfrage senden</button></div>
-      </form>
+      <div class="embed">
+        <h3>Betreuung anmelden</h3>
+        <p class="embed-note">Melde dich direkt hier für Nachbetreuung, Geburtsvorbereitung oder die Eltern-Kind-Pass-Beratung an. Deine Daten gehen sicher an meine Praxisverwaltung.</p>
+        <iframe src="https://tomaschko.hebamio.at/anmeldung" title="Anmeldung bei Hebamme Florian Tomaschko" loading="lazy"></iframe>
+        <p class="embed-fallback">Formular wird nicht angezeigt? <a href="https://tomaschko.hebamio.at/anmeldung" target="_blank" rel="noopener">Anmeldung in neuem Fenster öffnen</a></p>
+      </div>
     </div>
   </section>
 
